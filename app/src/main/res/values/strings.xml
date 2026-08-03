@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GhostMax</string>
+    <string name="search_hint">Chat durchsuchen…</string>
+    <string name="help_title">Hilfe</string>
+    <string name="help_text">GhostMax – KI-Assistent mit Ultra, Nitro, Silent und Smart-Modus.\n\n13 Provider: OpenRouter, Groq, OpenAI, Anthropic, Google, DeepSeek, Mistral, Cohere, Perplexity, Cerebras, Venice, FreedomGPT, GhostGPT.</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="no_undo">Keine Aktion zum Rückgängig machen</string>
+    <string name="undo_snackbar">Aktion rückgängig gemacht</string>
+</resources>

@@ -1,0 +1,15 @@
+.gradle/
+build/
+app/build/
+local.properties
+keysetup/local_keys.properties
+*.iml
+*.iws
+.idea/
+gradle/wrapper/gradle-wrapper.jar
+gradlew
+gradlew.bat
+.DS_Store
+*.log
+*.bak
+version_out.txt

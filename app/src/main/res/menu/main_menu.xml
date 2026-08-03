@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/group_chat">
+        <item android:id="@+id/action_projects" android:title="📂 Projekte" app:showAsAction="never"/>
+        <item android:id="@+id/action_chain_command" android:title="⚡ Ketten-Befehl" app:showAsAction="never"/>
+        <item android:id="@+id/action_clear" android:title="🗑️ Chat leeren" app:showAsAction="never"/>
+        <item android:id="@+id/action_export" android:title="📤 Chat exportieren" app:showAsAction="never"/>
+        <item android:id="@+id/action_favorites" android:title="⭐ Favoriten" app:showAsAction="never"/>
+        <item android:id="@+id/action_autodialog" android:title="🔁 Auto-Dialog" app:showAsAction="never"/>
+        <item android:id="@+id/action_undo" android:title="↩️ Rückgängig" app:showAsAction="never"/>
+        <item android:id="@+id/action_search" android:title="🔍 Suchen" app:showAsAction="never"/>
+    </group>
+    <group android:id="@+id/group_models">
+        <item android:id="@+id/action_catalog" android:title="📚 KI-Katalog" app:showAsAction="never"/>
+        <item android:id="@+id/action_add_provider" android:title="➕ Provider hinzufügen" app:showAsAction="never"/>
+        <item android:id="@+id/action_add_personality" android:title="🧠 Neue Persönlichkeit" app:showAsAction="never"/>
+        <item android:id="@+id/action_server" android:title="🖥️ Lokalen Server umschalten" app:showAsAction="never"/>
+        <item android:id="@+id/action_edit_keywords" android:title="📝 Keyword-Listen" app:showAsAction="never"/>
+    </group>
+    <group android:id="@+id/group_media">
+        <item android:id="@+id/action_image" android:title="🖼️ Bildgenerierung" app:showAsAction="never"/>
+    </group>
+    <group android:id="@+id/group_security">
+        <item android:id="@+id/action_secret" android:title="🕵️ Geheim-Modus" app:showAsAction="never"/>
+        <item android:id="@+id/action_ghostgpt" android:title="👻 GhostGPT" app:showAsAction="never"/>
+    </group>
+    <group android:id="@+id/group_settings">
+        <item android:id="@+id/action_settings" android:title="⚙️ Einstellungen" app:showAsAction="never"/>
+        <item android:id="@+id/action_stats" android:title="📊 Nutzungsstatistik" app:showAsAction="never"/>
+        <item android:id="@+id/action_changelog" android:title="📋 Änderungsprotokoll" app:showAsAction="never"/>
+        <item android:id="@+id/action_backup" android:title="💾 Backup" app:showAsAction="never"/>
+        <item android:id="@+id/action_restore" android:title="📂 Wiederherstellen" app:showAsAction="never"/>
+    </group>
+</menu>

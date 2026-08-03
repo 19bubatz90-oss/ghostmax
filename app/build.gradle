@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+android {
+    namespace 'com.ghostmax'
+    compileSdk 34
+    defaultConfig {
+        applicationId "com.ghostmax"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "8.1"
+    }
+    buildTypes {
+        release { minifyEnabled false }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures { buildConfig true }
+}
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+    implementation 'org.json:json:20240303'
+    implementation 'androidx.security:security-crypto:1.1.0-alpha06'
+    implementation 'com.google.code.gson:gson:2.10.1'
+}
+
+// BuildConfig-Felder für API-Keys (aus local.properties)
+def localProperties = new Properties()
+def localFile = rootProject.file("local.properties")
+if (localFile.exists()) {
+    localProperties.load(new FileInputStream(localFile))
+}
+android {
+    defaultConfig {
+        buildConfigField "String", "OPENROUTER_KEY", "\"${localProperties.getProperty('OPENROUTER_KEY', '')}\""
+        buildConfigField "String", "GROQ_KEY", "\"${localProperties.getProperty('GROQ_KEY', '')}\""
+        buildConfigField "String", "OPENAI_KEY", "\"${localProperties.getProperty('OPENAI_KEY', '')}\""
+        buildConfigField "String", "ANTHROPIC_KEY", "\"${localProperties.getProperty('ANTHROPIC_KEY', '')}\""
+        buildConfigField "String", "GOOGLE_KEY", "\"${localProperties.getProperty('GOOGLE_KEY', '')}\""
+        buildConfigField "String", "DEEPSEEK_KEY", "\"${localProperties.getProperty('DEEPSEEK_KEY', '')}\""
+        buildConfigField "String", "MISTRAL_KEY", "\"${localProperties.getProperty('MISTRAL_KEY', '')}\""
+        buildConfigField "String", "COHERE_KEY", "\"${localProperties.getProperty('COHERE_KEY', '')}\""
+        buildConfigField "String", "PERPLEXITY_KEY", "\"${localProperties.getProperty('PERPLEXITY_KEY', '')}\""
+        buildConfigField "String", "CEREBRAS_KEY", "\"${localProperties.getProperty('CEREBRAS_KEY', '')}\""
+        buildConfigField "String", "VENICE_KEY", "\"${localProperties.getProperty('VENICE_KEY', '')}\""
+        buildConfigField "String", "FREEDOMGPT_KEY", "\"${localProperties.getProperty('FREEDOMGPT_KEY', '')}\""
+        buildConfigField "String", "GHOSTGPT_KEY", "\"${localProperties.getProperty('GHOSTGPT_KEY', '')}\""
+    }
+}

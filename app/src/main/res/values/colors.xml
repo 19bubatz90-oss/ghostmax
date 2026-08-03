@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1E88E5</color>
+    <color name="colorPrimaryDark">#1565C0</color>
+    <color name="colorAccent">#00BFA5</color>
+    <color name="bg_chat">#F2F4F7</color>
+    <color name="bg_chat_dark">#121212</color>
+    <color name="bubble_user">#1E88E5</color>
+    <color name="bubble_user_dark">#1E88E5</color>
+    <color name="bubble_bot">#FFFFFF</color>
+    <color name="bubble_bot_dark">#2C2C2C</color>
+    <color name="bubble_bot_text">#1B1B1B</color>
+    <color name="bubble_bot_text_dark">#E0E0E0</color>
+    <color name="bubble_system_bg">#E3E7ED</color>
+    <color name="bubble_system_bg_dark">#333333</color>
+    <color name="bubble_system_text">#5A6472</color>
+    <color name="bubble_system_text_dark">#AAAAAA</color>
+    <color name="input_bar_bg">#FFFFFF</color>
+    <color name="input_bar_bg_dark">#1E1E1E</color>
+</resources>
